@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+.container {
+  padding-right: 13%;
+  padding-left: 13%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+}
+
+/* --HEADER-- */
+
+header {
+  background-image: url("../img/intro-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 0 10%;
+  height: 90vh;
+  background-position: center;
+}
+.logo-tro {
+  transform: rotate(270deg) !important;
+  color: #54d0dd;
+  font-size: 18px;
+}
+.header-div {
+  top: 13%;
+  height: auto;
+  letter-spacing: 1px;
+  display: flex;
+  margin-right: auto;
+}
+.header-div a {
+  text-decoration: none;
+  line-height: 1.6;
+}
+header h1 {
+  font-size: 3vh;
+  color: rgba(255,255,255,0.7);
+  font-family: 'Montserrat', sans-serif;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 0;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  padding: 0 20px;
+  display: inline-block;
+}
+header nav ul li a:hover {
+  color:#54d0dd;
+  transition: .25s;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+  transition: .4s;
+  font-size: 14px;
+}
+/*
+.container {
+  margin-top: 800px;
+}
+.cao1 {
+  position: sticky;
+  top: 10px;
+  opacity: 0;
+  transition: 1s;
+}
+.js-animate {
+  opacity: 1 !important;
+}
+*/
+.header-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 82%;
+}
+.header-content-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-content h1 {
+  margin-bottom: 5%;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.header-content p {
+  align-content: center;
+  color: rgba(255,255,255,0.7);
+  font-size: 24px;
+  font-family: 'Aldrich', sans-serif;
+}
+
+/* -- PRVI SECTION -- */
+
+#prvi {
+  background: linear-gradient(to bottom, #4fded2 0%, #93f2a3 100%);
+  padding-bottom: 8%;
+  transition: 1s;
+}
+.about-h1 {
+  color:#414a52;
+  text-align: center;
+  padding: 5% 0;
+  line-height: 1.6;
+}
+.about-h1 hr {
+  width: 10%;
+  height: 2px;
+  margin: 0 auto;
+  color: rgba(0,0,0,0.55);
+}
+.about-h1 h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+.about-left {
+  background: url("../img/business-photos/business9.jpg");
+  width: 49%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.about-right {
+  width: 49%;
+}
+.about-right p {
+  font-family: 'Montserrat', sans-serif;
+  font: 18px;
+  font-weight: 300;
+}
+.about-right button a {
+  text-decoration: none;
+  color: #54d0dd;
+  padding: 10px 20px;
+  background-color: #414a52;
+  border-radius: 4px;
+}
+.about-right button {
+  border: none;
+  margin: 0;
+  cursor: pointer;
+  transition: .2s;
+}
+.about-right button:hover {
+  opacity: .9;
+  top: 1px;
+  position: relative;
+  transition: .4s;
+}
+
+/* -- DRUGI SECTION -- */
+
+#drugi {
+  background: url("../img/business-photos/busines6.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 65%;
+  width: 100%;
+}
+
+/* -- TRECI SECTION -- */
+
+#treci {
+  background: linear-gradient(to bottom,#93f2a3 0%, rgba(79, 222, 210, .85) 100%);
+  height: 100%;
+  width: 100%;
+  /*
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  */
+}
+.treci-h1 {
+  padding: 5% 0;
+}
+.treci-h1 h1{
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #414a52;
+  margin-bottom: 1%;
+}
+.treci-h1 hr {
+  width: 10%;
+  height: 2px;
+  margin: 0 auto;
+  color: rgba(0,0,0,0.55);
+}
+.prva-3{
+  height: 30%;
+  width: 100%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.druga-3{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.kvadrat-slika {
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+  transition: 1s;
+  background-position: center !important;
+}
+.slika1{
+  background: url("../img/business-photos/business1.jpg");
+  background-size: 100% 100%;
+}
+.slika2{
+  background: url("../img/business-photos/business2.jpg");
+  background-size: 100% 100%;
+}
+.slika3{
+  background: url("../img/business-photos/business3.jpg");
+  background-size: 100% 100%;
+}
+.slika4{
+  background: url("../img/business-photos/business4.jpg");
+  background-size: 100% 100%;
+}
+.slika5{
+  background: url("../img/business-photos/business5.jpg");
+  background-size: 100% 100%;
+}
+.slika6{
+  background: url("../img/business-photos/business7.jpg");
+  background-size: 100% 100%;
+}
+
+/* -- CETVRI SECTION -- */
+
+#cetvrti{
+  height: 80vh;
+  background: linear-gradient(to bottom, rgba(84, 208, 221, .85) 0%, #93f2a3 100%);
+}
+.cetvrti-h1 {
+  padding: 5% 0;
+}
+.cetvrti-h1 h1 {
+  text-align: center;
+  color: #414a52;
+  font-weight: 400;
+  font-size: 2.5em;
+  margin-bottom: 1%;
+}
+.cetvrti-h1 hr{
+  width: 15%;
+  margin: 0 auto;
+  color: rgba(0,0,0,0.55);
+  height: 2px;
+}
+.contact-div{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form{
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+textarea{
+  background-color: #717b83;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+}
+input {
+  margin-bottom: 3%;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #717b83;
+  padding: 10px;
+  color: rgba(255,255,255,0.7);
+  font-weight: 400;
+  font-size: 18px;
+}
+input::placeholder {
+  font-weight: 400;
+  color: rgba(255,255,255,0.7);
+}
+textarea::placeholder {
+  color: rgba(255,255,255,0.7);
+  font-weight: 500;
+}
